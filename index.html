@@ -1,197 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Brooklyn Outdoor Film Festival</title>
-  <!-- bootstrap 4 -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- custom css -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Muli|Sarabun" rel="stylesheet">
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-      crossorigin="anonymous">
-</head>
-<body>
-  <nav class="navbar sticky-top navbar-expand-lg">
-    <a class="navbar-brand" href="#">Brooklyn Outdoor Film Festival</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#movies">Movies</a>
-        <a class="nav-item nav-link" href="#program">Program</a>
-        <a class="nav-item nav-link" href="#register">Register</a>
-      </div>
-    </div>
-  </nav>
-  <section class="hero">
-    <div class="hero-content">
-      <div>
-        <h1 class="main-header">Brooklyn Outdoor Film Festival</h1>
-        <ul>
-          <li><i class="fas fa-building"></i> <span class="event-info">Brooklyn Bridge Park</span></li>
-          <li><i class="fas fa-clock"></i> <span class="event-info">August 5th through 8th, from 6pm to midnight</span></li>
-        </ul>
-        <h2>Free for everyone!</h2>
-        <button class="btn register" href="register">Register now!</button>
-      </div>
-    </div>
-  </section>
-  <section class="content">
-    <div class="intro">
-      <h2 class="header">Movie &amp; outdoor lovers</h2>
-      <p>Come gather outside and watch your favorite movies</p>
-    </div>
-  </section>
-  <div class="container-fluid programs">
-  <div class="row city" id="program">
-    <div class="col-sm-12 col-md-5 content">
-      <div>
-        <h3 class="header">Brooklyn Outdoor Film Festival</h3>
-        <p>It's an outdoor festival that aims to bring together movie lovers to share and experience wonderful moments.</p>
-        <p>Your favorite childhood movies, the classics you grew up on and the latest of today's movies.</p>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-7">
-      <img class="img-fluid" src="./img/daria-bielokopytova-532609-unsplash.jpg" alt="">
-    </div>
-  </div> <!-- city row-->
-    <div class="row">
-      <div class="col-sm-12 col-md-5">
-        <img class="img-fluid" src="./img/devin-rajaram-702461-unsplash.jpg" alt="">
-      </div>
-      <div class="col-sm-12 col-md-6 content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" ="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" ="ie=edge" />
+    <title>Movie Finder</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli|Piedra"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.0/css/all.css"
+      integrity="sha38QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd6Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <a class="navbar-brand" href="#">Movie Finder</a>
+      <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#movies">Movies</a>
+            <a class="nav-item nav-link" href="#program">About</a>
+          </div>
+        </div>
+      </nav>
+      <!-- nav -->
+    </header>
+    <section class="hero">
+      <div class="hero-content">
         <div>
-          <h3 class="header">Jennifer - CEO &amp; Organizer</h3>
-          <p>Born and raised in Brooklyn, NYC. Jenny as what her friends like to call her was an avid film fan. She always dreamed of becoming a movie director.</p>
-          <p>She worked on several successful indie movies and now she's now ventured into management and promotions.</p>
-          <p>She now runs Brooklyn Outdoor Film Festival where she makes valuable contribution to the film culture in Brooklyn.</p>
+          <h1 class="main-header">Search for movies</h1>
+          <h2>Always Free</h2>
+          <p>
+            A yearly event for culture &amp; movie lovers. Tickets are free
+            &amp; they'll always be free.
+          </p>
+          <input id="search-bar" type="text" placeholder="Search for a Movie" />
+          <button class="search-button">
+            Search
+          </button>
         </div>
       </div>
-    </div>
-  </div> <!-- program -->
-  <section id="movies">
-    <div class="container-fluid">
-      <h2 class="main-header text-center">Featured movies</h2>
-      <div class="row">
-        <div class="col-sx-12 col-sm-12 col-md-3">
-          <img class="img-fluid poster" src="./img/poster1.jpg" alt="">
-        </div>
-        <div class="col-sx-12 col-sm-12 col-md-3">
-          <img class="img-fluid poster" src="./img/poster2.jpg" alt="">
-        </div>
-        <div class="col-sx-12 col-sm-12 col-md-3">
-          <img class="img-fluid poster" src="./img/poster3.jpg" alt="">
-        </div>
-        <div class="col-sx-12 col-sm-12 col-md-3">
-          <img class="img-fluid poster" src="./img/poster4.jpg" alt="">
-        </div>
-      </div> <!-- row -->
-    </div>
-  </section> <!-- movies-->
-  <div class="container-fluid">
-      <div class="row stats">
-        <div class="col-sm-12 col-md-4 stat">
-          <div class="stat-header">
-            <i class="fas fa-5x fa-tags"></i>
-          </div>
-          <div class="stat-body">
-            <p>5000 tickets</p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 stat">
-          <div class="stat-header">
-            <i class="fas fa-5x fa-film"></i>
-          </div>
-          <div class="stat-body">
-            <p>100+ movies</p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 stat">
-          <div class="stat-header">
-            <i class="fas fa-5x fa-utensils"></i>
-          </div>
-          <div class="stat-body">
-            <p>Snacks</p>
-          </div>
-        </div>
+    </section>
+    <section>
+      <h3>Recommended</h3>
+      <div id="search-results">
+        <figure>
+          <img src="./img/fox.jpg" alt="The Fantastic Mr. Fox movie" />
+        </figure>
+        <figure>
+          <img src="./img/toystory.jpg" alt="The Fantastic Mr. Fox movie" />
+        </figure>
+        <figure>
+          <img src="./img/lotg.jpg" alt="The Fantastic Mr. Fox movie" />
+        </figure>
       </div>
-    <div class="row" id="register">
-      <div class="col-sm-12 col-md-7 content">
-        <div>
-        <h3 class="header">Pre-register</h3>
-        <p>I need to publicize the festival, and to do this, I need a website. On this site, I need to display information
-          about
-          the festival, the films we're showing, and regularly published news or announcements about the festival.</p>
-        <div>
-          <h3 class="header">Remaining tickets</h3> <br>
-          <p><i class="fas fa-tags"></i> <span class="large">2467</span></p>
-        </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-5">
-        <form>
-          <h3>Book your seat today</h3>
-          <form-group>
-            <label for='name'>Name</label>
-            <input type='text' class="form-control" id='name' placeholder="e.g Jane Doe"/>
-          </form-group>
-          <form-group>
-            <label for='email'>Email Address</label>
-            <input type='email' class="form-control" id='email' placeholder="e.g you@example.com"/>
-          </form-group>
-          <form-group>
-            <label for='company'>Tickets</label>
-            <input type='number' class="form-control" id='company' placeholder="Friends, family etc."/>
-          </form-group>
-          <button class="btn register">Register</button>
-        </form>
-      </div>
-    </div>
-  </div> <!-- container -->
-  <footer>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 col-md-3">
-          <h3 class="header">Contact info</h3>
-          <ul>
-            <li>+1 234-567-890</li>
-            <li>brooklyn@festival.com</li>
-            <li>Brooklyn, Some Borough</li>
-            <li>Deadass Son</li>
-          </ul>
-        </div>
-        <div class="col-sm-12 col-md-3">
-          <h3 class="header">Social Media</h3>
-          <ul class="social-links">
-            <li><img class="img-fluid" src="./img/facebook.png" alt="facebook"></li>
-            <li><img class="img-fluid" src="./img/twitter.png" alt="twitter"></li>
-            <li><img class="img-fluid" src="./img/instagram.png" alt="instagram"></li>
-          </ul>
-          <h3 class="header">Other Links</h3>
-          <ul class="other-links">
-            <li><a class="nav-item" href="#">Brooklyn Bridge Park</a></li>
-            <li><a class="nav-item" href="#">Brooklyn Bridge Park</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <h3 class="header">About</h3>
-          <p>You'll need to make a first version of the site that meets all the requirements Jennifer explained above.</p>
-        </div>
-      </div>
-      <div class="row footer-bottom">
-        <p>All Rights Reserved &copy; OpenClassrooms 2019</p>
-      </div>
-    </div>
-  </footer>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    </section>
+    <!-- section -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
