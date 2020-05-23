@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" ="ie=edge" />
     <title>Movie Finder</title>
     <!-- custom css -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Muli|Piedra"
+      href="https://fonts.googleapis.com/css?family=Rajdhani|Piedra"
       rel="stylesheet"
     />
     <!-- font-awesome -->
@@ -23,25 +23,13 @@
   <body>
     <header>
       <a class="navbar-brand" href="#">Movie Finder</a>
-      <nav class="navbar sticky-top navbar-expand-lg">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#movies">Movies</a>
-            <a class="nav-item nav-link" href="#program">About</a>
-          </div>
-        </div>
       </nav>
       <!-- nav -->
     </header>
     <section class="hero">
       <div class="hero-content">
         <div>
-          <h1 class="main-header">Search for movies</h1>
-          <h2>Always Free</h2>
-          <p>
-            A yearly event for culture &amp; movie lovers. Tickets are free
-            &amp; they'll always be free.
-          </p>
+          <h1 class="main-header">Search for Movies</h1>
           <input id="search-bar" type="text" placeholder="Search for a Movie" />
           <button class="search-button">
             Search
@@ -49,20 +37,71 @@
         </div>
       </div>
     </section>
-    <section>
-      <h3>Recommended</h3>
-      <div id="search-results">
-        <figure>
-          <img src="./img/fox.jpg" alt="The Fantastic Mr. Fox movie" />
-        </figure>
-        <figure>
-          <img src="./img/toystory.jpg" alt="The Fantastic Mr. Fox movie" />
-        </figure>
-        <figure>
-          <img src="./img/lotg.jpg" alt="The Fantastic Mr. Fox movie" />
-        </figure>
+    <section id="movie">
+      <div class="movie-details">
+        <div class="movie-poster">
+          <figure>
+            <img src="./img/fox.jpg" alt="The Fantastic Mr. Fox movie" />
+          </figure>
+        </div>
+        <div class="movie-info">
+          <div>
+                      <h3 class="movie-title">Fantastic Mr. Fox</h3>
+                      <h4>English - 2009</h4>
+          </div>
+          <p>
+            After 12 years of bucolic bliss, Mr. Fox (George Clooney) breaks a promise to his wife (Meryl Streep) and raids the
+            farms of their human neighbors, Boggis, Bunce and Bean. Giving in to his animal instincts endangers not only his
+            marriage but also the lives of his family and their animal friends. When the farmers force Mr. Fox and company deep
+            underground, he has to resort to his natural craftiness to rise above the opposition.
+          </p>
+          <div>
+            <button>Watch</button>
+            <button>Buy</button>
+          </div>
+          <div>
+            <h5>Scenes</h5>
+            <div class="scences">
+              <figure class="scene">
+                <img src="./img/fox.jpg" alt="The Fantastic Mr. Fox movie" />
+              </figure>
+              <figure  class="scene">
+                <img src="./img/fox.jpg" alt="The Fantastic Mr. Fox movie" />
+              </figure>
+              <figure class="scene">
+                <img src="./img/fox.jpg" alt="The Fantastic Mr. Fox movie" />
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <section id="recommended">
+      <h3>Recommended for you</h3>
+      <div id="search-results">
+        <div>
+          <figure>
+            <img src="./img/fox.jpg" alt="The Fantastic Mr. Fox movie" />
+          </figure>
+          <h4>Fantastic Mr. Fox</h4>
+        </div>
+        <div>
+          <figure>
+            <img src="./img/toystory.jpg" alt="The Fantastic Mr. Fox movie" />
+          </figure>
+          <h4>Fantastic Mr. Fox</h4>
+        </div>
+        <div>
+          <figure>
+            <img src="./img/lotg.jpg" alt="The Fantastic Mr. Fox movie" />
+            <h4>Fantastic Mr. Fox</h4>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>Built by Eman</h3>
+    </footer>
     <!-- section -->
     <script src="js/script.js"></script>
   </body>

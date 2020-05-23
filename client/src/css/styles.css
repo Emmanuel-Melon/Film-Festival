@@ -20,9 +20,11 @@ a,
 li,
 span,
 p,
-label {
-  font-family: "Muli", Arial, Helvetica, sans-serif;
+label,
+button {
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
   font-weight: 400;
+  font-size: 18px;
 }
 
 a {
@@ -54,12 +56,18 @@ label {
 .main-header {
   color: #ffce38;
   font-size: 4rem;
+  text-align: center;
 }
 
 h3 {
   color: #ffce38;
   font-size: 2rem;
   text-align: center;
+}
+
+h4 {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -70,13 +78,16 @@ img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
 }
 
 header {
   display: flex;
   padding: 1.5rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background: rgba(178, 132, 190, 0.2);
+  margin-bottom: 4rem;
 }
 
 .search-button {
@@ -87,7 +98,7 @@ header {
   color: #ffce38;
   font-weight: 700;
   width: fit-content;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
 }
 
 ul {
@@ -104,6 +115,7 @@ ul {
 }
 
 .hero-content {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
   padding: 2.5rem;
   background: rgba(178, 132, 190, 0.2);
   display: flex;
@@ -120,8 +132,9 @@ ul {
 }
 
 .navbar-brand {
-  color: #ffce38;
+  color: #ffffff;
   transition: color 0.5s ease;
+  font-size: 2rem;
 }
 
 .navbar-brand:hover {
@@ -139,12 +152,12 @@ ul {
 
 figure {
   max-width: 350px;
-  margin-bottom: 1.5rem;
 }
 
 #search-bar {
   width: 600px;
   padding: 0.5rem;
+  border-radius: 0.4rem;
 }
 
 #search-results {
@@ -152,4 +165,56 @@ figure {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.movie-details {
+  display: flex;
+  padding: 2rem;
+  background: #000000;
+  color: #ffffff;
+}
+
+.movie-poster {
+  flex: 1;
+}
+
+.movie-info {
+  flex: 2;
+}
+
+.movie-title {
+  text-align: inherit;
+}
+
+#movie:after,
+#recommended:after {
+  display: block;
+  height: 0.15rem;
+  content: "";
+  background: #ffce38;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+  transform: rotate(1deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+  margin-top: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: #000000;
+  padding: 1rem;
+}
+
+.scences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.scene {
+  max-width: 220px;
 }
