@@ -23,7 +23,7 @@ p,
 label,
 button {
   font-family: "Rajdhani", Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -87,7 +87,6 @@ header {
   justify-content: center;
   align-items: center;
   background: rgba(178, 132, 190, 0.2);
-  margin-bottom: 4rem;
 }
 
 .search-button {
@@ -111,19 +110,19 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
+  padding: 2rem;
 }
 
 .hero-content {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
   padding: 2.5rem;
   background: rgba(178, 132, 190, 0.2);
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: 50%;
+  margin: 0 auto;
   border-radius: 0.5rem;
   color: #ffffff;
+  border: solid 0.15rem #ffce38;
 }
 
 /* navigation bar */
@@ -148,10 +147,6 @@ ul {
 
 .nav-item:hover {
   color: #ffce38;
-}
-
-figure {
-  max-width: 350px;
 }
 
 #search-bar {
@@ -186,6 +181,18 @@ figure {
   text-align: inherit;
 }
 
+.movie-title:after,
+.tag:after {
+  display: block;
+  height: 0.15rem;
+  content: "";
+  background: #ffce38;
+  width: 150px;
+  border-radius: 50%;
+  transform: rotate(1deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+}
+
 #movie:after,
 #recommended:after {
   display: block;
@@ -193,20 +200,18 @@ figure {
   content: "";
   background: #ffce38;
   width: 50%;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   border-radius: 50%;
   transform: rotate(1deg);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
-  margin-top: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
 }
 
 footer {
   background: #000000;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scences {
@@ -217,4 +222,61 @@ footer {
 
 .scene {
   max-width: 220px;
+}
+
+.mini-title {
+  text-align: center;
+}
+
+.buy,
+.watch {
+  width: 180px;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+  border: transparent;
+}
+
+.watch {
+  background: rgba(178, 132, 190, 1);
+  border: solid 0.15rem rgba(178, 132, 190, 1);
+  color: #ffffff;
+}
+
+.buy {
+  background: transparent;
+  border: solid 0.15rem rgba(178, 132, 190, 1);
+  color: rgba(178, 132, 190, 1);
+}
+
+.meta-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.attributes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+
+.attributes li {
+  margin-left: 2rem;
+  list-style-type: armenian;
+}
+
+.preferences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0.4rem;
+}
+
+.thumbnail {
+  max-width: 260px;
+}
+
+div {
+  padding: 0;
 }
